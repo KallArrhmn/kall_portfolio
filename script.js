@@ -57,7 +57,7 @@ function sendEmail() {
     }
 
     const subject = `Contact Form Submission from ${name}`;
-    const body = `**Name:** ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`;
+    const body = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`;
     window.location.href =
         `mailto:haikalarrahman4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
