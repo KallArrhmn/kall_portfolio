@@ -1,0 +1,301 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   <img alt="Logo" height="20" src="https://storage.googleapis.com/a1aa/image/2c3m0dYzMsojONyAOxb7ckJJZjPud9Uiro86xzERQDCO8u5E.jpg" style="vertical-align: middle;" width="20"/>
+   Venkatesh Kamath
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a23;
+      color: #ffffff;
+    }
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      position: fixed;
+      top: 0;
+      background-color: #0a0a23;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 300;
+    }
+    .navbar a:hover {
+      color: #7f7fff;
+    }
+    .navbar .logo {
+      font-weight: 600;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .container.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .container.hidden {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .content h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin: 0;
+    }
+    .content h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+    .content p {
+      font-size: 1em;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+    .content p strong {
+      font-weight: 600;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+    .social-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      color: #7f7fff;
+      font-size: 1.5em;
+      margin: 10px 0;
+      text-decoration: none;
+    }
+    .scroll-down {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      cursor: pointer;
+      color: #ffffff;
+    }
+    .scroll-down span {
+      color: #ffffff;
+    }
+    .scroll-down:hover span {
+      color: #ffffff;
+    }
+    .scroll-down i {
+      margin-left: 10px;
+      animation: bounce 2s infinite;
+      color: #ffffff;
+    }
+    .scroll-down:hover i {
+      color: #ffffff;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    .contact-form {
+      background-color: #0a0a23;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #1a1a3d;
+      color: #ffffff;
+    }
+    .contact-form button {
+      background-color: #7f7fff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background-color: #6f6fff;
+      transform: scale(1.05);
+    }
+    .contact-form button:active {
+      background-color: #5f5fff;
+      transform: scale(1);
+    }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar">
+   <div class="logo">
+    <img alt="Logo" height="20" src="https://storage.googleapis.com/a1aa/image/2c3m0dYzMsojONyAOxb7ckJJZjPud9Uiro86xzERQDCO8u5E.jpg" style="vertical-align: middle;" width="20"/>
+    Venkatesh
+   </div>
+   <div class="nav-links">
+    <a href="#home">
+     Home
+    </a>
+    <a href="#about">
+     About
+    </a>
+    <a href="#contact">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <div class="container" id="home">
+   <div class="content">
+    <h1>
+     Hi, I'm Venkatesh Kamath
+    </h1>
+    <h2>
+     Information Science Engineering Student
+    </h2>
+    <p>
+     A second year undergraduate engineering student at
+     <strong>
+      Canara Engineering College
+     </strong>
+     , Mangalore.
+    </p>
+    <img alt="Profile picture of Venkatesh Kamath standing outdoors" class="profile-pic" height="150" src="https://storage.googleapis.com/a1aa/image/tKX6eQvfQWmROUqDJK6mRnZdyGvFE7IJQiyRCHXBeOYth3NnA.jpg" width="150"/>
+   </div>
+   <div class="social-icons">
+    <a href="#">
+     <i class="fab fa-linkedin">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-github">
+     </i>
+    </a>
+   </div>
+   <a class="scroll-down" href="#about">
+    <span>
+     Scroll down
+    </span>
+    <i class="fas fa-arrow-down">
+    </i>
+   </a>
+  </div>
+  <div class="container" id="about">
+   <div class="content">
+    <h1>
+     About Me
+    </h1>
+    <p>
+     Information about Venkatesh Kamath...
+    </p>
+   </div>
+  </div>
+  <div class="container" id="contact">
+   <div class="content">
+    <h1>
+     Contact Me
+    </h1>
+    <form class="contact-form" id="contact-form">
+     <input id="name" name="name" placeholder="Your Name" required="" type="text"/>
+     <input id="email" name="email" placeholder="Your Email" required="" type="email"/>
+     <textarea id="message" name="message" placeholder="Your Message" required="" rows="4"></textarea>
+     <button type="submit">
+      Send
+     </button>
+    </form>
+   </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js">
+  </script>
+  <script>
+   (function() {
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) // Replace with your EmailJS service ID and template ID
+        .then(function() {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send message. Please try again later.');
+        });
+    });
+
+    // Scroll animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          entry.target.classList.remove('hidden');
+        } else {
+          entry.target.classList.remove('visible');
+          entry.target.classList.add('hidden');
+        }
+      });
+    });
+
+    document.querySelectorAll('.container').forEach(container => {
+      observer.observe(container);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+ </body>
+</html>
