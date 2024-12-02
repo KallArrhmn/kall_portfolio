@@ -226,6 +226,42 @@ button:hover {
     /* Warna saat hover */
 }
 
+.logo {
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    /* Tinggi garis */
+    background: #ffffff;
+    /* Warna garis */
+    margin-top: 10px;
+    /* Jarak antara judul dan garis */
+}
+
+
+/* Menghapus tanda panah pada input type number */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Chrome, Safari, dan Opera */
+    margin: 0;
+    /* Menghapus margin */
+}
+
 @media (max-width: 768px) {
     .chat-box {
         height: 250px;

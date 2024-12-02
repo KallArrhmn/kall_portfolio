@@ -16,7 +16,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">Kall</div>
+        <div class="logo" onclick="scrollToHome()">Kall</div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </div>
@@ -56,7 +56,7 @@
             <h1>Contact Me</h1>
             <div class="contact-form">
                 <input id="name" name="name" placeholder="Your Name" required type="text" />
-                <input id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Your Phone Number" required title="Please enter a valid phone number (10-15 digits)" type="tel" />
+                <input id="phone" name="phone" placeholder="Your Phone Number" required title="Please enter a valid phone number" type="number" />
                 <input id="email" name="email" placeholder="Your Email" required type="email" />
                 <textarea id="message" name="message" placeholder="Your Message" required rows="4"></textarea>
                 <button onclick="sendEmail()">Send</button>

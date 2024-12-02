@@ -26,11 +26,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+function scrollToHome() {
+    const homeSection = document.getElementById('home');
+    homeSection.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 // Toggle menu
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
+
 
 // Set active link
 function setActiveLink(link) {
