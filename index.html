@@ -10,23 +10,37 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">Kall</div>
-        <div class="menu-toggle" onclick="toggleMenu()"> <i class="fas fa-bars"></i> </div>
-        <div class="nav-links"> <a class="active" href="#home">Home</a> <a href="#about">About</a> <a href="#contact">Contact</a> </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
+
     <!-- Home Section -->
     <div class="container" id="home">
         <div class="content">
-            <a href="https://instagram.com/h.arrhmn"> <img src="https://i.ibb.co.com/KLyGJYC/Haikal-Arrahman.jpg" alt="Haikal Arrahman" class="profile-pic" height="150" width="150" /> </a>
+            <a href="https://instagram.com/h.arrhmn">
+                <img src="https://i.ibb.co.com/KLyGJYC/Haikal-Arrahman.jpg" alt="Haikal Arrahman" class="profile-pic" height="150" width="150" />
+            </a>
             <h1>Hi, I'm Haikal Arrahman</h1>
         </div>
-        <a class="scroll-down" href="#about"> <span>Scroll down</span> <i class="fas fa-arrow-down"></i> </a>
+        <a class="scroll-down" href="#about">
+            <span>Scroll down</span>
+            <i class="fas fa-arrow-down"></i>
+        </a>
     </div>
+
     <!-- About Section -->
     <div class="container hidden" id="about">
         <div class="content">
@@ -35,20 +49,28 @@
                 sebagai peluang untuk berkembang dan menemukan kekuatan dalam diri saya.</p>
         </div>
     </div>
+
     <!-- Contact Section -->
-    <div class="container" id="chat">
+    <div class="container" id="contact">
         <div class="content">
-            <h1>Chat Live</h1>
-            <div class="chat-box" id="chat-box"></div>
-            <div class="chat-form"> <input id="name" name="name" placeholder="Nama Anda" required type="text" /> <textarea id="message" name="message" placeholder=" Pesan Anda" required rows="4"></textarea> <button onclick="sendMessage()">Kirim</button> </div>
+            <h1>Contact Me</h1>
+            <div class="contact-form">
+                <input id="name" name="name" placeholder="Your Name" required type="text" />
+                <input id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Your Phone Number" required title="Please enter a valid phone number (10-15 digits)" type="tel" />
+                <input id="email" name="email" placeholder="Your Email" required type="email" />
+                <textarea id="message" name="message" placeholder="Your Message" required rows="4"></textarea>
+                <button onclick="sendEmail()">Send</button>
+            </div>
         </div>
     </div>
+
     <!-- Error Modal -->
     <div class="modal" id="errorModal">
         <div class="modal-content">
             <p>Maaf, semua kolom harus diisi.</p>
         </div>
     </div>
+
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
